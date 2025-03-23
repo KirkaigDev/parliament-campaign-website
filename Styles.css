@@ -28,7 +28,7 @@
   
   .hamburger-menu {
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
-  
+    --Banner-Link-Colour: #00000000;
     display: flex;
     flex-direction: column;
     gap: var(--hamburger-gap);
@@ -132,6 +132,7 @@
 }.banner-mobile {
   height: 0px;
   padding: 0vw;
+  z-index: -2;
 }
 .button {
   display: flex;
@@ -342,6 +343,7 @@ body {
   }
   .banner-mobile {
     display: flex;
+    z-index: 2;
     justify-content: space-between;
     background-color: #00155a;
     padding: 0.47vw;
