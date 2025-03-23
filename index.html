@@ -90,6 +90,14 @@
     </div>
 </div>
 <script>  function hidemenu(x) {
+    function sidebar() {
+    var checkBox = document.getElementById("Test-check");
+    if (checkBox.checked == true){
+      document.getElementById("mySidenav").style.width = "100%";
+} else {
+  document.getElementById("mySidenav").style.width = "0";
+}
+  }
     if (x.matches) { // If media query matches
       document.getElementById("Test-check").disabled = false;
     } else {
