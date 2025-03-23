@@ -1,0 +1,385 @@
+:root {
+  --Device-Height: 100vh;
+}
+:root {
+  --Device-Width: 100vw;
+}
+:root {
+  --Banner-Link-Colour: #e28000;
+}
+:root {
+  --Button-Underline: none;
+}
+:root {
+  --Button-Transition: 0.25s;
+}
+:root {
+  --Button-Underline-Transition: 0.8vh;
+}
+:root {
+  --Button-Underline-Transition-Colour: #6b6d8b00;
+}
+:root {
+  --Main-Text-Colour: #00065a;
+}
+:root {
+  --aspect-ratio: calc(100vh / 100vw);
+}
+@font-face {
+  font-family: "Cooper";
+  src: url(Fonts/Cooper-ttf/Cooper-Bold.ttf) format("truetype");
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00155a;
+  padding: 0.47vw;
+}.banner-mobile {
+  height: 0px;
+  padding: 0vw;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  top: 0px;
+  height: 3vw;
+  flex-direction: row-reverse;
+  background-color: #00000000;
+  border: none;
+}
+:link {
+  color: #00000000;
+}
+.button:hover {
+  --Banner-Link-Colour: #704000;
+  --Button-Underline: underline;
+  transition: var(--Button-Transition);
+  --Button-Underline-Transition-Colour: #704000;
+  --Button-Underline-Transition: 0.16vw;
+}
+.button-current-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  top: 0px;
+  height: 3vw;
+  flex-direction: row-reverse;
+  background-color: #00000000;
+  border: none;
+  --Banner-Link-Colour: #0077ff;
+}
+.button-current-page:hover {
+  --Banner-Link-Colour: #6b6d8b;
+  --Button-Underline: underline;
+  --Button-Underline-Transition: 3px;
+  --Button-Underline-Transition-Colour: #6b6d8b;
+}
+.button-text {
+  font-size: 1.5vw;
+  font-weight: 900;
+  font-family: Georgia;
+  color: var(--Banner-Link-Colour);
+  text-decoration: var(--Button-Underline);
+  transition: var(--Button-Transition);
+  text-underline-offset: var(--Button-Underline-Transition);
+  text-decoration-color: var(--Button-Underline-Transition-Colour);
+}
+.intro-title {
+  color: var(--Main-Text-Colour);
+  font-family: "Cooper";
+  font-size: 5.5vh;
+  text-decoration: underline;
+}
+.intro-subtitle {
+  color: var(--Main-Text-Colour);
+}
+.intro-paragraph {
+  color: var(--Main-Text-Colour);
+  margin-bottom: 1.2vw;
+}
+.intro-div {
+  display: block;
+  background-image: linear-gradient(
+    150deg,
+    rgba(212, 212, 255, 0.541),
+    rgba(0, 26, 255, 0.658)
+  );
+  text-align: center;
+  margin-top: 3vw;
+  border-radius: 1.5vw;
+  border-width: 0.55vw;
+  border-style: solid;
+  border-color: var(--Main-Text-Colour);
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 65%;
+}
+.intro-text {
+  color: var(--Main-Text-Colour);
+  font-size: 2.9vh;
+  font-family: Helvetica;
+  font-weight: 1000;
+}
+.main-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.icons {
+  height: 2.4vw;
+  position: relative;
+  fill: var(--Banner-Link-Colour);
+  transition: var(--Button-Transition);
+}
+.icons-mobile {
+  height: 0;
+  position: relative;
+  fill: var(--Banner-Link-Colour);
+  transition: var(--Button-Transition);
+}
+.title {
+  color: #2700b4;
+  font-size: 4.8vw;
+  font-weight: 1000;
+  font-family: "Cooper";
+  position: relative;
+  text-align: center;
+  bottom: 0.6vw;
+}
+.title-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 5.5vw;
+  background-color: #678affa9;
+  border-style: solid;
+  border-width: 0.75vh;
+  border-color: #0400ff;
+  top: 20.7vw;
+}
+.title-div-alignment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Self_Image {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  opacity: 100%;
+  z-index: -1;
+}
+.image-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0px;
+  background-image: url("Photo-for-funds-Long-Banner.png");
+  background-size: contain;
+  aspect-ratio: 7152 / 1870;
+}
+.support-links {
+  color: rgb(69, 187, 0);
+  font-size: 2.9vh;
+  font-family: Helvetica;
+  font-weight: 1000;
+}
+
+body {
+  background: linear-gradient(to bottom, #02007c 20vh, #0040ff);
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (orientation: portrait) {
+  .banner {
+    padding: 0px;
+  }
+  .button-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    top: 0px;
+    height: fit-content;
+    flex-direction: row-reverse;
+    background-color: #00000000;
+    border: none;
+  }
+  .banner-mobile {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00155a;
+    padding: 0.47vw;
+    height: fit-content;
+  }
+  .image-div {
+    background-image: url("Self_Photo_Banner-Phone.png");
+    background-size: contain;
+    aspect-ratio: 4392 / 2469;
+  }
+  .button {
+    width: 0px;
+    background-color: #000000;
+    height: 0px;
+  }
+  .icons {
+    height: 0px;
+  }
+  .icons-mobile {
+    height: 5vh;
+  }
+  .button-current-page {
+    width: 0px;
+    background-color: #000000;
+    height: fit-content;
+  }
+  .button-text {
+    font-size: 0px;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: #333;
+  --background: white;
+  --hamburger-margin: 8px;
+  --animation-timing: 300ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  position: relative;
+  top: var(--hamburger-margin);
+  right: var(--hamburger-margin);
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+/* Hamburger */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: #333;
+  --background: white;
+  --hamburger-margin: 8px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  position: relative;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
+  cursor: pointer;
+}
+
+.hamburger-menu:has(input:checked) {
+  --foreground: white;
+  --background: #333;
+}
+
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+  border: 1px solid var(--background);
+  box-shadow: 0 0 0 1px var(--foreground);
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  transition: translate var(--animation-timing);
+  translate: -100%;
+  padding: 0.5rem 1rem;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+  background-color: var(--foreground);
+  color: var(--background);
+  max-width: 10rem;
+  min-height: 100vh;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
