@@ -38,45 +38,6 @@
     cursor: default;
   }
   
-  .hamburger-menu::before,
-  .hamburger-menu::after,
-  .hamburger-menu input {
-    content: "";
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--Banner-Link-Colour);
-    border-radius: 9999px;
-    transform-origin: left center;
-    transition: opacity var(--animation-timing), width var(--animation-timing),
-      rotate var(--animation-timing), translate var(--animation-timing),
-      background-color var(--animation-timing);
-  }
-  
-  .hamburger-menu input {
-    appearance: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    pointer-events: none;
-  }
-  
-  .hamburger-menu:has(input:checked)::before {
-    rotate: 45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
-  }
-  
-  .hamburger-menu:has(input:checked)::after {
-    rotate: -45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
-  }
-  
-  .hamburger-menu input:checked {
-    opacity: 0;
-    width: 0;
-  }
-  
   .sidenav {
     display: flex;
     flex-direction: column;
@@ -100,13 +61,15 @@
     justify-content: center;
     cursor: pointer;
     top: 0px;
+    z-index: -2;
     height: fit-content;
     flex-direction: row-reverse;
     background-color: #00000000;
     border: none;
   }
   .button-text-test {
-    font-size: 5vh;
+    font-size: 0;
+    z-index: -2;
     font-weight: 900;
     font-family: Georgia;
     color: var(--Banner-Link-Colour);
@@ -116,7 +79,7 @@
     text-decoration-color: var(--Button-Underline-Transition-Colour);
   }
   .icons-test {
-    height: 5vh;
+    height: 0;
     position: relative;
     fill: var(--Banner-Link-Colour);
     transition: var(--Button-Transition);
@@ -468,6 +431,7 @@ body {
 }
 .button-current-page-test {
   display: flex;
+  z-index: 2;
   align-items: center;
   justify-content: left;
   cursor: pointer;
@@ -481,6 +445,7 @@ body {
 }
 .button-text-test {
   font-size: 10vw;
+  z-index: 2;
   font-weight: 900;
   font-family: Georgia;
   color: var(--Banner-Link-Colour);
@@ -491,6 +456,7 @@ body {
 }
 .icons-test {
   height: 10vw;
+  z-index: 2;
   position: relative;
   fill: var(--Banner-Link-Colour);
   transition: var(--Button-Transition);
