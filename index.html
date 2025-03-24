@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Styles.css">
+    <title>Zeke For Independent Of Cowper</title>
     <link rel="icon" type="image/png" href="favicon.ico">
     <base target="_self">
     <script src="Functions.js"></script>
@@ -163,7 +162,7 @@
 .intro-title {
   color: var(--Main-Text-Colour);
   font-family: "Cooper";
-  font-size: 5.5vh;
+  font-size: 3.2vw;
   text-decoration: underline;
 }
 .intro-subtitle {
@@ -192,7 +191,7 @@
 }
 .intro-text {
   color: var(--Main-Text-Colour);
-  font-size: 2.9vh;
+  font-size: 2vw;
   font-family: Helvetica;
   font-weight: 1000;
 }
@@ -297,12 +296,24 @@ body {
     border-style: solid;
     border-width: 0.75vh;
     border-color: #0400ff;
-    top: 43.2vw;
+    top: 44.5vw;
   }
   .title-div-alignment {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+  .intro-div {
+    width: 92vw;
+  }
+  .intro-paragraph {
+    width: 100%;
+  }
+  .intro-title {
+    font-size: 7vw;
+  }
+  .intro-text {
+    font-size: 3.5vw;
   }
   .banner {
     padding: 0px;
@@ -358,20 +369,22 @@ body {
 
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  --Banner-Link-Colour: rgb(255, 115, 0);
 
   display: flex;
   flex-direction: column;
   gap: var(--hamburger-gap);
-  top: 0px;
+  width: 6vh;
   position: relative;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
   z-index: 2;
   cursor: pointer;
 }
-
 .hamburger-menu:has(input:focus-visible)::before,
 .hamburger-menu:has(input:focus-visible)::after,
 .hamburger-menu input:focus-visible {
-  border: 1px solid var(--background);
+  border: 1px solid var(--Banner-Link-Colour);
   box-shadow: 0 0 0 1px var(--Banner-Link-Colour);
 }
 
