@@ -444,10 +444,19 @@ body {
     cursor: pointer;
     top: 0px;
     height: fit-content;
+    width: 80vw;
     flex-direction: row-reverse;
     background-color: #00000000;
     border: none;
     margin: 0.6vw;
+    margin-top: 5vw;
+  }
+  .button-test:hover {
+    --Banner-Link-Colour: #704000;
+    --Button-Underline: underline;
+    transition: var(--Button-Transition);
+    --Button-Underline-Transition-Colour: #704000;
+    --Button-Underline-Transition: 0.16vw;
   }
   .button-current-page-test {
     display: flex;
@@ -457,14 +466,22 @@ body {
     cursor: pointer;
     top: 0px;
     height: fit-content;
+    width: 80vw;
     flex-direction: row-reverse;
     background-color: #00000000;
     border: none;
     margin: 0.6vw;
+    margin-top: 5vw;
     --Banner-Link-Colour: #0077ff;
+  }  .button-current-page-test:hover {
+    --Banner-Link-Colour: #6b6d8b;
+    --Button-Underline: underline;
+    transition: var(--Button-Transition);
+    --Button-Underline-Transition-Colour: #6b6d8b;
+    --Button-Underline-Transition: 0.16vw;
   }
   .button-text-test {
-    font-size: 10vw;
+    font-size: 7vw;
     z-index: 2;
     font-weight: 900;
     font-family: Georgia;
@@ -475,7 +492,10 @@ body {
     text-decoration-color: var(--Button-Underline-Transition-Colour);
   }
   .icons-test {
-    height: 10vw;
+    height: 7vw;
+    width: 7vw;
+    margin: .5vw;
+    margin-right: 1.25vw;
     z-index: 2;
     position: relative;
     fill: var(--Banner-Link-Colour);
