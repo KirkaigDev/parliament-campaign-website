@@ -19,6 +19,10 @@
   font-family: "Cooper";
   src: url(Fonts/Cooper-ttf/Cooper-Bold.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Cooper-Regular";
+  src: url(Fonts/Cooper-ttf/Cooper-Bold.ttf) format("truetype");
+}
 /* Hamburger */
 
 .hamburger-div {
@@ -153,15 +157,23 @@
 .intro-title {
   color: var(--Main-Text-Colour);
   font-family: "Cooper";
-  font-size: 3.2vw;
+  font-size: 1.5cm;
   text-decoration: underline;
 }
 .intro-subtitle {
   color: var(--Main-Text-Colour);
+  font-family: "Cooper";
+  font-size: 1cm;
+  text-decoration: underline;
+  text-align: left;
 }
 .intro-paragraph {
   color: var(--Main-Text-Colour);
-  margin-bottom: 2.5vw;
+  font-family: "Cooper-Regular";
+  line-height: 0.8cm;
+  margin-bottom: 0.5cm;
+  font-size: 0.67cm;
+  text-align: left;
 }
 .intro-div {
   display: block;
@@ -182,9 +194,7 @@
 }
 .intro-text {
   color: var(--Main-Text-Colour);
-  font-size: 2vw;
   font-family: Helvetica;
-  font-weight: 1000;
 }
 .main-div {
   display: flex;
@@ -251,7 +261,6 @@
 body {
   background: linear-gradient(to bottom, #02007c 20vh, #0040ff);
   min-height: 100vh;
-  max-width: 100vw;
   margin: 0;
 }
 
@@ -293,14 +302,13 @@ body {
     padding-left: 5vw;
     padding-right: 5vw;
   }
-  .intro-paragraph {
-    width: 100%;
-  }
   .intro-title {
-    font-size: 7vw;
+    font-size: 1cm;
   }
-  .intro-text {
-    font-size: 3.95vw;
+  .intro-paragraph {
+    line-height: 0.7cm;
+    font-size: 0.5cm;
+    font-family: "Cooper-Regular";
   }
   .banner {
     padding: 0px;
@@ -467,7 +475,8 @@ body {
     margin: 0.6vw;
     margin-top: 5vw;
     --Banner-Link-Colour: #0077ff;
-  }  .button-current-page-test:hover {
+  }
+  .button-current-page-test:hover {
     --Banner-Link-Colour: #6b6d8b;
     --Button-Underline: underline;
     transition: var(--Button-Transition);
@@ -488,7 +497,7 @@ body {
   .icons-test {
     height: 7vw;
     width: 7vw;
-    margin: .5vw;
+    margin: 0.5vw;
     margin-right: 1.25vw;
     z-index: 2;
     position: relative;
