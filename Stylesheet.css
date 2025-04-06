@@ -23,6 +23,10 @@
   font-family: "Cooper-Regular";
   src: url(Fonts/Cooper-ttf/Cooper-Bold.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Cooper-Thin";
+  src: url(Fonts/Cooper-ttf/Cooper-SemiBold.ttf) format("truetype");
+}
 /* Hamburger */
 
 .hamburger-div {
@@ -175,8 +179,29 @@
   font-size: 0.67cm;
   text-align: left;
 }
+.email-link {
+  color: var(--Main-Text-Colour);
+  font-family: "Cooper-Regular";
+  line-height: 0.8cm;
+  margin-bottom: 0.5cm;
+  font-size: 0.67cm;
+  text-align: left;
+}
+.bottom-text {
+  color: var(--Main-Text-Colour);
+  font-family: "Cooper-Thin";
+  line-height: 0.8cm;
+  margin-bottom: 0.5cm;
+  font-size: 0.67cm;
+  font-style: italic;
+}
+.bottom-div {
+  width: 70%;
+}
 .intro-div {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: linear-gradient(
     150deg,
     rgba(212, 212, 255, 0.541),
@@ -303,12 +328,18 @@ body {
     padding-right: 5vw;
   }
   .intro-title {
-    font-size: 1cm;
+    font-size: 0.8cm;
   }
   .intro-paragraph {
     line-height: 0.7cm;
     font-size: 0.5cm;
     font-family: "Cooper-Regular";
+  }
+  .bottom-text {
+    font-size: 0.6cm;
+  }
+  .bottom-div {
+    width: 100%;
   }
   .banner {
     padding: 0px;
