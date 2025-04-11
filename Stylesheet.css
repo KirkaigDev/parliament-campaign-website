@@ -180,6 +180,14 @@
   font-size: 0.67cm;
   text-align: left;
 }
+.FAQ-Heading {
+  color: var(--Main-Text-Colour);
+  font-family: "Cooper-Regular";
+  line-height: 0.8cm;
+  margin-bottom: 0.5cm;
+  font-size: 0.67cm;
+  text-align: left;
+}
 .email-link {
   color: var(--Main-Text-Colour);
   font-family: "Cooper-Regular";
