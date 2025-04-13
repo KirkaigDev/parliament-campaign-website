@@ -15,3 +15,10 @@ function dropdown() {
     document.getElementById("dropdown-menu").style.transform = "rotate(0deg)";
   }
 }
+
+function CheckboxCheck() {
+  var checkBox = document.getElementById("Test-check");
+  if (checkBox.checked == true) {
+    document.getElementById("Test-check").checked = false;
+  }
+}
