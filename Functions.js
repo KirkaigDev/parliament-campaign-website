@@ -8,10 +8,10 @@ function sidebar() {
 }
 
 function dropdown() {
-  var checkBox = document.getElementById("Test-check");
+  var checkBox = document.getElementById("Dropdown-Check");
   if (checkBox.checked == true) {
-    document.getElementById("mySidenav").style.transform = "rotate(90deg)";
+    document.getElementById("dropdown-menu").style.transform = "rotate(90deg)";
   } else {
-    document.getElementById("mySidenav").style.transform = "rotate(0deg)";
+    document.getElementById("dropdown-menu").style.transform = "rotate(0deg)";
   }
 }
