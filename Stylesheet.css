@@ -8,7 +8,8 @@
   --Button-Underline-Transition-Colour: #6b6d8b00;
   --Main-Text-Colour: #00054b;
   --Bright-Blue: #0019a8;
-  --Subheading-Colour: rgb(0, 0, 141);
+  --Subheading-Colour: rgb(0, 0, 197);
+  --FAQ-Heading-Colour: rgb(0, 0, 141);
   --aspect-ratio: calc(100vh / 100vw);
   --Link-Colour: rgb(49, 247, 0);
   /* Hamburger variables */
@@ -120,7 +121,7 @@
   display: inline-block;
   transition: transform 0.3s ease;
   transform: rotate(-90);
-  fill: var(--Subheading-Colour);
+  fill: var(--FAQ-Heading-Colour);
 }
 .underline {
   text-decoration-thickness: 0.07cm;
@@ -227,7 +228,7 @@ ul {
   text-align: left;
 }
 .FAQ-Heading {
-  color: var(--Subheading-Colour);
+  color: var(--FAQ-Heading-Colour);
   font-family: "Cooper-Regular";
   line-height: 0.8cm;
   margin-bottom: 0cm;
