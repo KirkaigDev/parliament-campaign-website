@@ -11,7 +11,7 @@
   --Subheading-Colour: rgb(0, 0, 197);
   --FAQ-Heading-Colour: rgb(0, 0, 141);
   --aspect-ratio: calc(100vh / 100vw);
-  --Link-Colour: rgb(49, 247, 0);
+  --Link-Colour: rgb(51, 255, 0);
   /* Hamburger variables */
   --bar-width: 6vh;
   --bar-height: 0.8vh;
@@ -268,7 +268,7 @@ ul {
   align-items: center;
   text-align: center;
   margin-top: 3vw;
-  background-color: #6078ff;
+  background-color: #8496ff;
   border-radius: 1.5vw;
   border-width: 0.23cm;
   border-style: solid;
@@ -397,6 +397,12 @@ body {
     line-height: 0.7cm;
     font-size: 0.5cm;
     font-family: "Cooper-Regular";
+  }
+  .dropdown-content p {
+    font-size: 0.5cm;
+  }
+  .underline {
+    font-size: 0.6cm;
   }
   .bottom-text {
     font-size: 0.6cm;
