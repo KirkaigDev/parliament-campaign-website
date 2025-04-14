@@ -7,15 +7,6 @@ function sidebar() {
   }
 }
 
-function dropdown() {
-  var checkBox = document.getElementById("Dropdown-Check");
-  if (checkBox.checked == true) {
-    document.getElementById("dropdown-menu").style.transform = "rotate(90deg)";
-  } else {
-    document.getElementById("dropdown-menu").style.transform = "rotate(0deg)";
-  }
-}
-
 function CheckboxCheck() {
   var checkBox = document.getElementById("Test-check");
   if (checkBox.checked == true) {
